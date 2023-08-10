@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./js/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <img src="img/Group 112.svg" alt="logo">
+            </div>
+            <div>
+                <input list="browsers" type="text" class="header-input" placeholder="Введите запрос">
+            </div>
+
+            <datalist id="browsers">
+                <!-- <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge"> -->
+            </datalist>
+
+        </div>
+    </header>
+    <main class="block-center">
+        <div class="container">
+            <div class="main-title">
+                <h3>Клиенты</h3>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th class="">
+                            <div class="text-oposit text-titleID ">
+                                <p>ID</p>
+                                <img src="img/arrow_downward.svg" alt="">
+                            </div> 
+                        </th>
+                        <th class="fio">
+                            <div class="text-oposit text-title">
+                                <p>Имя Фамилия Отчество</p>
+                                <img src="img/Group 202.svg" alt="">
+                            </div>
+                        </th>
+                        <th class="">
+                            <div class="text-oposit text-title data">
+                                <p>Дата и время создания</p> 
+                                <img src="img/arrow_downward.svg" alt="">
+                            </div>
+                        </th>
+                        <th class="">
+                            <div class="text-oposit text-title data">
+                                <p>Дата и время изменения</p> 
+                                <img src="img/arrow_downward.svg" alt="">
+                            </div>
+                            
+                        </th>
+                        <th>
+                            <div class="text-oposit text-title cont">
+                                <p>Контакты</p>
+                            </div>
+                            
+                        </th>
+                        <th>
+                            <div class="text-oposit text-title ">
+                                <p>Действия</p>
+                            </div>
+                            
+                        </th>
+                    </tr>
+                    <div class="table-cont">
+                        <!-- <tr><td class="id-content text-title">123455</td><td class="title-text-black">Скворцов Денис Юрьевич</td><td>
+                            <div class="text-oposit data-text">
+                                <div>
+                                    <p class="title-text-black">21.02.2021</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-2">14:50</p>
+                                </div>
+                                
+                            </div>
+                             
+                        </td><td>
+                            <div class="text-oposit data-text">
+                                <div>
+                                    <p class="title-text-black">21.02.2021</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-2">14:50</p>
+                                </div>
+                                
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/icon/Vector.svg" alt="">
+                            <img src="img/icon/fb.svg" alt="">
+                            <img src="img/icon/phone.svg" alt="">
+                            <img src="img/icon/mail.svg" alt="">
+                            <img src="img/icon/mail (1).svg" alt="">
+                        </td>
+                        <td>
+                            <div class="tabl_btn">
+                                <button class="btn-table1"><img src="img/Vector3.svg" alt=""> Изменить</button>
+                                <button class="btn-table2"><img src="img/Vector (1).svg" alt=""> Удалить</button>
+                            </div>                    
+                            
+                        </td></tr> -->
+                    </div>
+                    
+                </table>
+            </div>
+        </div>
+    </main>
+    <main class="main-footer">
+        <div class="container">
+            <div class="main-footer-content block-center">
+            <button class="btn">
+                <img src="img/Vector.svg" alt="" class="img_btn">
+                Добавить клиента
+            </button>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <form action="#" class="modal2 block-center">
+        <div class="modal__inner">
+            <div class="form-inputs">
+                <div class="form-close">
+                    <img src="img/Frame 339.svg" alt="">
+                </div>
+                <div class="form-header">
+                    <h3 class="form-text-title">Новый клиент</h3>
+                </div>
+                <div class="form-content2">
+                    <div>
+                        <input type="text" placeholder="Фамилия*" class="inp surname">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Имя*" class="inp name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Отчество" class="inp postName">
+                    </div>
+                </div>
+            </div>
+            <div class="placeCont block-center">
+                    <div class="tel">
+                    <select>
+                        <option value="Телефон" select>Телефон</option>
+                        <option value="Доп. телефон">Доп. телефон</option>
+                        <option value="Email">Email</option>
+                        <option value="Vk">Vk</option>
+                        <option value="Facebook">Facebook</option>
+                    </select>
+                    <input type="text" placeholder="Введите данные контакта">
+                </div>
+                <button class="btn-form-cont">
+                    <img src="img/VectorPL.svg" alt="#"> Добавить контакт
+                </button>
+            </div>
+            
+            
+            <button type="submit" class="form-btn">Сохранить</button>
+            <button class="btn-del-form">Отмена</button>
+        </div>
+    </form>
+    <form action="#" class="modal block-center">
+        <div class="modal__inner ">
+            <div class="form-inputs">
+                <div class="form-close">
+                    <img src="img/Frame 339.svg" alt="">
+                </div>
+                <div class="form-header">
+                    <h3 class="form-text-title">Изменить данные</h3>
+                    <h4 class="text-title">ID: 123458</h4>
+                </div>
+                <div class="form-content">
+                    <div>
+                        <h1>Фамилия*</h1>
+                        <input type="text" class="inp surname">
+                    </div>
+                    <div>
+                        <h1>Имя*</h1>
+                        <input type="text" class="inp name">
+                    </div>
+                    <div>
+                        <h1>Отчество</h1>
+                        <input type="text" class="inp postName">
+                    </div>
+                </div>
+            </div>
+            <div class="placeCont block-center">
+                <div class="telfons">
+                    <!-- <div class="tel">
+                    <select>
+                        <option value="Телефон" select>Телефон</option>
+                        <option value="Доп. телефон">Доп. телефон</option>
+                        <option value="Email">Email</option>
+                        <option value="Vk">Vk</option>
+                        <option value="Facebook">Facebook</option>
+                    </select>
+                    <input type="text" placeholder="Введите данные контакта">
+                </div> -->
+                </div>
+                <button class="btn-form-cont">
+                    <img src="img/VectorPL.svg" alt="#"> Добавить контакт
+                </button>
+            </div>
+            <button type="submit" class="form-btn">Сохранить</button>
+            <button class="btn-del-form">Удалить клиента</button>
+        </div>
+    </form>
+    <form action="#" class="modal3 block-center">
+        <div class="modal__inner2">
+            <div class="form-close">
+                <img src="img/Frame 339.svg" alt="">
+            </div>
+            <div class="">
+                <h3 class="form-text-del1">Удалить клиента</h3>
+                <h1 class="form-text-del">Вы действительно хотите удалить данного клиента?</h1>
+            </div>
+            <button type="submit" class="form-btn">Удалить</button>
+            <button class="btn-del-form">Отмена</button>
+        </div>
+    </form>
+</body>
+</html>
